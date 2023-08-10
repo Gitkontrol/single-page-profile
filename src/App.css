@@ -24,10 +24,11 @@ body {
 
  h5:hover {
   color: #4EE1A0;
-  cursor: pointer
+  cursor: pointer;
+  transition: 0.8s
  }
 
  button:hover {
-  color: #4EE1A0;
+  color: #72f0b7;
   transition: 0.5s
  }
