@@ -24,18 +24,22 @@ const mappedProjects = images.map(({bitmap, text, id}) => (
     
   return (
     <>
-      <div className="text-white">
+      <div className="text-white md:w-full">
        <Header />
      
        <Hero />
-       <hr />
-       <Skills />
-       <hr /> 
-       <div className="flex justify-between mt-[70px]">
-        <h1>Projects</h1><h5 className="border-b-2 border-[#4EE1A0] leading-9">CONTACT ME</h5>
+       <div className="px-8">
+        <hr />     
+        <Skills />
+        <hr className="md:border-[#151515] "/>
+       </div>    
+       <div className="flex justify-between px-8 mt-[70px] md:-mt-10 md:mb-8">
+        <h1 className="md:text-[70px]">Projects</h1><h5 className="border-b-2 border-[#4EE1A0] leading-9">CONTACT ME</h5>
        </div>         
        <br /><br /> 
-      { mappedProjects }          
+       <div className="md:grid md:grid-cols-2 md:pr-10">  
+          { mappedProjects }
+       </div>          
         <Footer />
       </div>
       
