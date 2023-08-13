@@ -22,7 +22,7 @@ export default defineConfig(({ command }) => {
 
   if (command !== "serve") {
 
-      config.base = "/portfolio-page/";
+      config.base = "/single-profile-page/";
 
   }
 
