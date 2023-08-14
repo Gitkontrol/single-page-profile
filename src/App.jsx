@@ -23,27 +23,26 @@ const mappedProjects = images.map(({bitmap, text, id}) => (
    console.log(mappedProjects)           
     
   return (
-    <>
-      <div className="text-white md:w-full">
-       <Header />
-     
+    <div>
+      <div className="text-white md:w-full md:overflow-x-hidden">
+       <Header />     
        <Hero />
-       <div className="px-8">
-        <hr />     
+       <div className="px-8 md:mx-auto lg:mt-52">
+        <hr className="mb-12" />     
         <Skills />
-        <hr className="md:border-[#151515] "/>
+        <hr className="mt-4 md:border-[#151515] "/>
        </div>    
-       <div className="flex justify-between px-8 mt-[70px] md:-mt-10 md:mb-8">
+       <div className="flex justify-between gap-5 px-8 mt-[70px] lg:justify-between md:mb-8">
         <h1 className="md:text-[70px]">Projects</h1><h5 className="border-b-2 border-[#4EE1A0] leading-9">CONTACT ME</h5>
        </div>         
        <br /><br /> 
-       <div className="md:grid md:grid-cols-2 md:pr-10">  
+       <div className="md:grid md:grid-cols-2 md:pr-10 lg:justify-between">  
           { mappedProjects }
        </div>          
         <Footer />
       </div>
       
-    </>
+    </div>
   )
 }
 
