@@ -1,40 +1,54 @@
-import { Oval10 } from './'
+import { Revrs, Revrs2 } from './'
 
 const Skills = () => {
   return (
 
-    <div className="flex px-8 -mb-20 flex-col md:mx-auto lg:grid-cols-3 md:grid md:px-0 md:grid-cols-2 md:text-left md:gap-x-32 md:pr-40 md:gap-y-12 gap-6">
-    
-        <div>
-            <h2 className="md:text-3xl">HTML</h2><p className="md:text-lg md:text-left">4 Years Experience</p>       
+    <div className="mt-[440px] px-4 md:mt-[140px] md:text-left md:px-[33px] xl:px-40 xl:mt-60">
+        <hr/>
+        <div className='flex flex-col gap-8 relative top-12 pb-[85px] md:grid md:grid-cols-2 md:gap-y-16 xl:grid-cols-3 xl:pl-1 xl:pt-8'>            
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">HTML</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div>       
+            </div> 
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">CSS</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div>       
+            </div>
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">Javascript</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div>       
+            </div>
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">React</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div>       
+            </div>
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">Python</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div>       
+            </div>
+            <div className='flex flex-col md:gap-4'>
+                <h2 className="md:text-[48px]">SQL</h2>
+                <div className="text-[#D9D9D9] text-[16px] font-medium leading-7 md:text-lg">4 Years Experience</div> 
+            </div>
         </div>
-        <div>
-            <h2 className="md:text-3xl">CSS</h2><p className="md:text-lg md:text-left">4 Years Experience</p>       
+        <div className='md:hidden xl:hidden'>
+            <hr />    
         </div>
-        <div>
-            <h2 className="md:text-3xl">JAVASCRIPT</h2><p className="md:text-lg md:text-left">4 Years Experience</p>       
+        <div className='absolute md:hidden left-[227px] -mt-[68px] md:right-0 md:top-[69.5%] xl:hidden'> 
+            <img src={Revrs} alt='ellipse' className='opacity-25'/>
+            <img src={Revrs} alt='ellipse' className='-mt-[66px] opacity-25'/>
+            <img src={Revrs} alt='ellipse' className='-mt-[66px] opacity-25'/>
+            <img src={Revrs} alt='ellipse' className='-mt-[66px] opacity-25'/>
+            <img src={Revrs} alt='ellipse' className='-mt-[66px] opacity-25'/>
         </div>
-        <div>
-            <h2 className="md:text-3xl">REACT</h2><p className="md:text-lg md:text-left">4 Years Experience</p>       
+        <div className='hidden md:hidden xl:absolute xl:right-0 xl:top-[66rem]'> 
+            <Revrs2 className='opacity-25'/>
+            <Revrs2 className='-mt-[22%] opacity-25'/>
+            <Revrs2 className='-mt-[22%] opacity-25'/>
+            <Revrs2 className='-mt-[22%] opacity-25'/>
+            <Revrs2 className='-mt-[22%] opacity-25'/>
         </div>
-        <div>
-            <h2 className="md:text-3xl">PYTHON</h2><p className="md:text-lg md:text-left">4 Years Experience</p>       
-        </div>
-        <div>
-            <h2 className="md:text-3xl">SQL</h2><p className="md:text-lg md:text-left">4 Years Experience</p> 
-        </div>
-    
-        
-        <div className='ml-[162px] mt-4 md:relative md:left-[200%] md:bottom-16'> 
-            <Oval10 className='-mt-[50%] opacity-25 md:-mt-[70px]'/>
-            <Oval10 className='-mt-[50%] opacity-25 md:-mt-[70px]'/>
-            <Oval10 className='-mt-[50%] opacity-25 md:-mt-[70px]'/>
-            <Oval10 className='-mt-[50%] opacity-25 md:-mt-[70px]'/>
-            <Oval10 className='-mt-[50%] opacity-25 md:-mt-[70px]'/>
-        </div>
-
     </div>
   )
 }
-
 export default Skills

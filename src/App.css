@@ -1,15 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
   /* padding-top: 2rem; */
   text-align: center; 
   
   
 }
 
-body {
+ body {
   background-color: #151515;
-  color: white;  
+  color: white; 
+  max-width: 100vw;
+  overflow-x: hidden;
+  display:hidden
  } 
 
 
@@ -21,14 +22,19 @@ body {
   font-weight: 500;
   line-height: 26px;
  }
+ h5 {
+  letter-spacing: 2.286px;
+ }
 
  h5:hover {
   color: #4EE1A0;
   cursor: pointer;
-  transition: 0.8s
+  transition: 0.9s
  }
 
  button:hover {
   color: #72f0b7;
-  transition: 0.5s
+  transition: 0.9s
  }
+
+ 
